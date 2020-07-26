@@ -30,7 +30,6 @@ import java.util.ArrayList;
  * this folders are gotten from the MediaStore by the Method getPicturePaths()
  */
 public class MainActivity extends AppCompatActivity implements itemClickListener {
-
     RecyclerView folderRecycler;
     TextView empty;
     private static final int MY_PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE = 1;
@@ -171,5 +170,7 @@ public class MainActivity extends AppCompatActivity implements itemClickListener
                 .density;
         return Math.round((float) dp * density);
     }*/
+
+
 
 }

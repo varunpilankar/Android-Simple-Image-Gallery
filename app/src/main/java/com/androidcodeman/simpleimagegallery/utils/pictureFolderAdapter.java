@@ -55,7 +55,7 @@ public class pictureFolderAdapter extends RecyclerView.Adapter<pictureFolderAdap
                 .apply(new RequestOptions().centerCrop())
                 .into(holder.folderPic);
 
-        String text = "("+folder.getNumberOfPics()+") "+folder.getFolderName();
+        String text = folder.getFolderName()+"\n"+folder.getNumberOfPics()+" Media";
         holder.folderName.setText(text);
 
         holder.folderPic.setOnClickListener(new View.OnClickListener() {
